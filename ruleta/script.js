@@ -5,18 +5,11 @@ ruleta.addEventListener("click",girar);
 dinero = 50;
 
 function girar(){
-    if (dinero >= 20) {
-    	let rand = Math.random()*7200; 
-    	sumarPuntos(0);
-        calcular(rand);
-    }  
-    else {
-    	alert("no te queda suficiente dinero");
-    }
+    let rand = Math.random()*7200;
+    calcular(rand);
 }
 function sumarPuntos(p){
 	dinero += p;
-    document.querySelector("#dinero").innerHTML = "Dinero: $" + dinero + "USD";
 }
 
 
